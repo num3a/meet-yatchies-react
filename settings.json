@@ -1,0 +1,16 @@
+{
+  "public": {
+    "BRAIN_TREE" : {
+      "MERCHANT_ID" : "kgjb3j6hg4jf63ym",
+      "PUBLIC_KEY" :  "wrz8fgwnw2h2mjnt",
+      "PRIVATE_KEY" : "3cfaf3252c8d49bb64354b5e15dbc588"
+    }
+  },
+  "env" : {
+    "MONGO_URL":"mongodb://sportydbuser:sportydbuser@ds045511.mongolab.com:45511/sporty"
+  },
+  "meteorDeveloper" : {
+  "clientId" : "<CLIENT_ID_HERE>",
+  "secret" : "<SECRET_HERE>"
+}
+}

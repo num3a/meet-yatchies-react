@@ -1,0 +1,20 @@
+<template name="register">
+    {{#ionModal title="Register"}}
+        <div class="padding text-center register-modal">
+            <div class="list">
+                <label class="item item-input">
+                    <input type="text" placeholder="Email" data-form="email">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Password" data-form="password">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Confirm Password" data-form="password2">
+                </label>
+            </div>
+            <p>
+                <button data-action="register" class="button button-positive register-button">Register</button>
+            </p>
+        </div>
+    {{/ionModal}}
+</template>

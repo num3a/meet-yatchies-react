@@ -1,0 +1,11 @@
+<template name="_bookingItem">
+    {{#with booking}}
+        {{#ionItem path=../path iconLeft=true iconRight=true}}
+            <h2>{{title}}</h2>
+            <p>
+                {{activity}}
+            </p>
+
+        {{/ionItem }}
+    {{/with }}
+</template>

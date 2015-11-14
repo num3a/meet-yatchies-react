@@ -1,0 +1,28 @@
+<template name="bookings">
+
+        {{#contentFor "headerButtonLeft"}}
+            <button class="button button-clear pull-left button-positive" data-ion-modal="search">
+                {{> ionIcon icon='ios-search'}}
+            </button>
+        {{/contentFor}}
+
+        {{#contentFor "headerButtonRight"}}
+            <button class="button button-clear pull-right button-positive" data-ion-modal="newBooking">
+                {{> ionIcon icon='ios-plus-empty'}}
+            </button>
+        {{/contentFor}}
+
+        {{#contentFor "headerTitle"}}
+            <h1 class="title">Bookings</h1>
+        {{/contentFor}}
+
+        {{#ionView}}
+            {{#ionContent}}
+                {{#ionList}}
+                    {{#each bookings}}
+                        {{> _bookingItem booking=this path="bookings.show"}}
+                    {{/each}}
+                {{/ionList}}
+            {{/ionContent}}
+        {{/ionView}}
+</template>

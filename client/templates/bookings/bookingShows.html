@@ -1,0 +1,26 @@
+<template name="bookingsShow">
+
+    {{#contentFor "headerButtonLeft"}}
+        {{>ionNavBackButton class="button-positive" text=false}}
+    {{/contentFor}}
+
+    {{#contentFor "headerButtonRight"}}
+        <button class="button button-clear pull-right button-positive" data-action="share-product" data-product-id="{{product._id}}">
+            {{> ionIcon icon='ios-upload-outline'}}
+        </button>
+    {{/contentFor}}
+
+    {{#contentFor "headerTitle"}}
+        <h1 class="title">Booking Details</h1>
+    {{/contentFor}}
+
+    {{#ionView}}
+        {{#ionContent}}
+
+            {{#with booking}}
+                {{title}}
+            {{/with}}
+
+        {{/ionContent}}
+    {{/ionView}}
+</template>

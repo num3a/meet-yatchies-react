@@ -4,36 +4,70 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base             # Packages every Meteor app needs to have
-mobile-experience       # Packages for a great mobile UX
-mongo                   # The database Meteor supports right now
-blaze-html-templates    # Compile .html files into Meteor Blaze views
-session                 # Client-side reactive dictionary for your app
-jquery                  # Helpful client-side library
-tracker                 # Meteor's client-side reactive programming library
-
-standard-minifiers      # JS/CSS minifiers run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-ecmascript              # Enable ECMAScript2015+ syntax in app code
-
-insecure                # Allow all DB writes from clients (for prototyping)
-
-twbs:bootstrap          # Bootstrap
-react                   # React
+fastclick
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+random
+ejson
+spacebars
+check
+less
+ecmascript
+crosswalk
+reactive-var
 accounts-password
 
-msavin:mongol
+#TODO: REMOVE INSECURE
+insecure
+alanning:roles
+mdg:geolocation
+fortawesome:fontawesome
 
-meetyatchies:mty
+iron:router
+zimme:active-route
 
-kadira:flow-router
-kadira:react-layout
+momentjs:moment
+tap:i18n
 
-less
-#edgee:slingshot        #Image upload
+#DEV TOOLS
+#msavin:mongol
+#msavin:jetsetter
+meteortoys:allthings
+meteorhacks:kadira
 
 
-useraccounts:core
-useraccounts:bootstrap
-useraccounts:flow-routing
-gwendall:blaze-to-react
+aldeed:collection2
+aldeed:autoform
+
+#Payments
+patrickml:braintree
+
+#LOCAL PACKAGES
+spty:spty
+
+
+
+#IONIC
+fourseven:scss
+meteoric:ionic-sass
+meteoric:ionicons-sass
+meteoric:ionic
+meteoric:autoform-ionic
+
+
+###################
+zimme:iron-router-active
+anti:fake
+reywood:publish-composite
+matb33:collection-hooks
+mrt:underscore-string-latest
+dburles:collection-helpers
+meteorhacks:kadira-debug

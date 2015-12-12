@@ -1,10 +1,9 @@
 App = React.createClass({
-
-
     render(){
-        return <div className="container">
-            <h1>Meet Yatchies</h1>
-            <NavBar />
+return <div>
+        <Header />
+            <Content />
+            <Footer />
         </div>
     }
 });

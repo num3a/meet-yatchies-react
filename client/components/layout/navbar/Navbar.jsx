@@ -33,11 +33,11 @@ NavBar = React.createClass({
         const currentUserId = this.data.currentUser && this.data.currentUser._id;
 
         if( currentUserId){
-            return <NavBarProfileItem key={this.data.currentUser._id} currentUser={this.data.currentUser} />
+            return <NavBarProfileItem key={this.data.currentUser._id} currentUser={this.data.currentUser} />;
         }
         else
         {
-            return "";
+           return <AccountsUIWrapper />;
         }
     },
     render(){

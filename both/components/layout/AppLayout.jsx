@@ -2,7 +2,9 @@ AppLayout = React.createClass({
     render(){
         return <div>
             <Header />
-            {this.props.content}
+            <div className="container my-content">
+                {this.props.content}
+            </div>
             <Footer />
         </div>
     }

@@ -6,7 +6,7 @@ NavBarProfileItem = React.createClass({
     },
     render(){
         return <li>
-            <a>{this.props.currentUser.username}</a>
+            <a>{this.props.currentUser.emails[0].address}</a>
         </li>;
     }
 });

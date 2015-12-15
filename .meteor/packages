@@ -22,7 +22,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 twbs:bootstrap          # Bootstrap
 react                   # React
 
-accounts-ui
 accounts-password
 
 msavin:mongol
@@ -33,5 +32,10 @@ kadira:flow-router
 kadira:react-layout
 
 less
-
 #edgee:slingshot        #Image upload
+
+
+useraccounts:core
+useraccounts:bootstrap
+useraccounts:flow-routing
+gwendall:blaze-to-react

@@ -37,7 +37,7 @@ NavBar = React.createClass({
         }
         else
         {
-           return <AccountsUIWrapper />;
+           return <li><a className="btn btn-default" href="/sign-in">Sign In</a></li>;
         }
     },
     render(){

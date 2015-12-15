@@ -4,26 +4,36 @@ FlowRouter.route('/', {
         ReactLayout.render(AppLayout, {content: <Home />});
     }
 });
-
+/*
 FlowRouter.route('/login', {
-    name: 'home',
+    name: 'login',
     action() {
         ReactLayout.render(AppLayout, {content: <Login />});
     }
-});
+}); */
 
 FlowRouter.route('/register', {
-    name: 'home',
+    name: 'register',
     action() {
         ReactLayout.render(AppLayout, {content: <Register />});
     }
 });
 
 FlowRouter.route('/profile', {
-    name: 'home',
+    triggersEnter: [AccountsTemplates.ensureSignedIn],
+    name: 'profile',
     action() {
         ReactLayout.render(AppLayout, {content: <Profile />});
 
     }
 });
 
+FlowRouter.notFound = {
+    // Subscriptions registered here don't have Fast Render support.
+    subscriptions: function() {
+
+    },
+    action: function() {
+        ReactLayout.render(AppLayout, {content : <NotFound />});
+    }
+};

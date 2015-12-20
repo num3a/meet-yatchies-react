@@ -21,7 +21,7 @@
   "setupMongo": false,
 
   // Application name (no spaces).
-  "appName": "meteor",
+  "appName": "meetyatchies",
 
   // Location of app (local directory). This can reference '~' as the users home directory.
   // i.e., "app": "~/Meteor/my-app",

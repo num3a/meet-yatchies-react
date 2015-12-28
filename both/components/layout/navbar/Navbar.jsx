@@ -13,20 +13,23 @@ NavBar = React.createClass({
     links : [
         {
             title : 'Home',
-            route : '/'
+            route : '/',
+            iconName : 'fa-home'
         },
         {
             title : 'Profile',
-            route : '/profile'
+            route : '/profile',
+            iconName : 'fa-user'
         },
         {
             title : 'Settings',
-            route :'/settings'
+            route :'/settings',
+            iconName : 'fa-cog'
         }],
 
     renderNavBarItems() {
         return this.links.map((item) => {
-            return <NavBarItem key={item.title} title={item.title} route={item.route} />;
+            return <NavBarItem key={item.title} title={item.title} route={item.route} iconName={item.iconName} />;
         });
     },
     renderNavBarProfileItem(){
@@ -41,7 +44,7 @@ NavBar = React.createClass({
         }
     },
     render(){
-        return (<nav className="navbar navbar-default navbar-fixed-top hidden-xs">
+        return (<nav className="navbar navbar-default navbar-fixed-top">
             <div className="container">
                 <ul className="nav navbar-nav">
                     {this.renderNavBarItems()}

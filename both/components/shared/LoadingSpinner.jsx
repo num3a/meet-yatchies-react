@@ -1,5 +1,5 @@
 LoadingSpinner = React.createClass({
     render(){
-        return (<h3>Loading ...</h3>);
+        return (<i className="fa fa-spinner fa-spin"></i>);
     }
 });

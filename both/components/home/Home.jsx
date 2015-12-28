@@ -9,6 +9,9 @@ Home = React.createClass({
             yatchList: Yatchs.find({}).fetch()
         };
     },
+    renderSearchPanel(){
+        return (<HomeSearchPanel />);
+    },
     renderYatchList(){
 
         return this.data.yatchList.map((yatch) => {
@@ -23,7 +26,9 @@ Home = React.createClass({
         return (<div className="container">
             <div className="row">
 
-                <div className="col-lg-3"></div>
+                <div className="col-lg-3">
+                    {this.renderSearchPanel()}
+                </div>
                 <div className="col-lg-9">
                     {this.renderYatchList()}
                 </div>

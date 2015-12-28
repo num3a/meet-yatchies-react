@@ -5,7 +5,7 @@ AppLayout = React.createClass({
                 {this.props.nav ||  <NavBar />}
             </header>
 
-            <div className="container my-content">
+            <div className="container-fluid my-content">
                 {this.props.content}
             </div>
             {this.props.footer || <Footer />}

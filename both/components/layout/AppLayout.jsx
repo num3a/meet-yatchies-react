@@ -4,6 +4,7 @@ AppLayout = React.createClass({
             <header>
                 {this.props.nav ||  <NavBar />}
             </header>
+
             <div className="container my-content">
                 {this.props.content}
             </div>

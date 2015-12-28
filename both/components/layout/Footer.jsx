@@ -1,5 +1,7 @@
 Footer = React.createClass({
     render(){
-        return <footer></footer>
+        return (<footer>
+
+        </footer>);
     }
 });

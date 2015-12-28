@@ -35,8 +35,12 @@ ecmascript-runtime@0.2.6
 ejson@1.0.7
 email@1.0.8
 fastclick@1.0.7
+<<<<<<< HEAD
 fortawesome:fontawesome@4.4.0
 fourseven:scss@3.4.1
+=======
+fortawesome:fontawesome@4.5.0
+>>>>>>> add font awesome, to customize mobile navbar
 geojson-utils@1.0.4
 gwendall:body-events@0.1.6
 hot-code-push@1.0.0

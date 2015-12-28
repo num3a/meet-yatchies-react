@@ -63,7 +63,6 @@ meteoric:ionic
 meteoric:autoform-ionic
 
 
-<<<<<<< HEAD
 ###################
 zimme:iron-router-active
 anti:fake
@@ -72,11 +71,3 @@ matb33:collection-hooks
 mrt:underscore-string-latest
 dburles:collection-helpers
 meteorhacks:kadira-debug
-=======
-useraccounts:core
-useraccounts:bootstrap
-useraccounts:flow-routing
-gwendall:blaze-to-react
-
-fortawesome:fontawesome
->>>>>>> add font awesome, to customize mobile navbar

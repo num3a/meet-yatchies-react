@@ -41,13 +41,13 @@ NavBar = React.createClass({
         }
     },
     render(){
-        return (<nav className="navbar navbar-default navbar-fixed-top hidden-xs">
+        return <nav className="navbar navbar-default navbar-fixed-top">
             <div className="container">
                 <ul className="nav navbar-nav">
                     {this.renderNavBarItems()}
                     {this.renderNavBarProfileItem()}
                 </ul>
             </div>
-        </nav>);
+        </nav>
     }
 });

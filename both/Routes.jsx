@@ -1,4 +1,5 @@
 FlowRouter.route('/', {
+    triggersEnter: [AccountsTemplates.ensureSignedIn],
     name: 'home',
     action() {
         ReactLayout.render(AppLayout, {content: <Home />});
